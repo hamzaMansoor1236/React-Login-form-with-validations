@@ -62,7 +62,7 @@ function App() {
   }
 
   return (
-    <div className="container border border-primary mt-5">
+    <div className="container  mt-5">
       {isSubmit ? (
             <div
               className="alert alert-success text-success text-center"
@@ -83,6 +83,7 @@ function App() {
             type="text"
             className="form-control"
             id="username"
+            placeholder="Enter your username"
             onChange={(e) => {
               dealUserName(e);
             }}
@@ -106,6 +107,7 @@ function App() {
             type="email"
             className="form-control"
             id="email"
+            placeholder="Enter your email address"
             onChange={(e)=>{dealEmail(e)}}
           />
           {!emailOk ? (
@@ -127,6 +129,7 @@ function App() {
             type="password"
             className="form-control"
             id="password"
+            placeholder="Enter your email password"
             onChange={(e) => {
               setPassword(e.target.value);
               if(password)
